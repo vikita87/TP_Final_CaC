@@ -1,0 +1,94 @@
+:root {
+    --azul: #5E3DB9;
+    --gris: #817D7D;
+    --contraste: #BE9899;
+    --negro: #151010; 
+    --blanco: #E8E8F6;
+}
+
+#cuerpo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    margin: 5vw 30vw 5vw 30vw;
+    border-radius: 1em;
+}
+
+#cuerpo section {    
+    width: fit-content;
+    background-color: #BE9899;
+    padding: 30px;
+    border-radius: 1em;
+    border: 1px dashed #5E3DB9;
+}
+
+#ver_clientes {
+    text-align: center;
+}
+#cuerpo .form {
+    margin: auto;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px dotted #5E3DB9;
+}
+
+#cuerpo label {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin-left: 10px;
+    align-items: center;
+    color: #151010;
+}
+
+input {
+    width: 64%;
+    margin-right: 0px;
+}
+
+#bajo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+textarea {
+    width: 64%;
+} 
+
+
+/*  Media Query */
+
+/*Tablet*/
+
+@media (min-width: 576px) and (max-width: 992px) {
+    #cuerpo {
+        margin: 5vw;
+    }
+    #cuerpo p {
+        margin: 10px;
+    }
+}
+/*Fin Tablet*/
+
+/*Movil*/
+@media (max-width: 575px) {
+    #cuerpo {
+        margin: 5vw;
+    }
+    #cuerpo p {
+        margin: 10px;
+    }
+    
+    input {
+        width: 90%;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    textarea {
+        margin-left: 15px;
+        width: 90%;
+    }
+    
+}
+/*Fin Movil*/

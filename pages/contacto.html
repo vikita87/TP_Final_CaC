@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Pc - Servicio Técnico</title>
+    <link rel="icon" href="../img/Icono_DR_PC.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <img src="../img/Logo_DR_PC.png" alt="Logo">
+        <nav>    
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/mantenimiento.html">Mantenimiento Técnico</a></li>
+                <li><a href="../pages/presupuesto.html">Presupuesto</a></li>
+                <li><a href="../pages/quienes_somos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <div id="titulo">
+            <h1>Formulario de contacto</h1>
+            <p id="parrafo1">Escribinos y en breve nos pondremos en contacto</p>
+        </div>        
+        
+        <div id="cuerpo">
+            <section>
+                <form class="form" id="contactForm" method="POST"> 
+                    <div id="contenido">
+                        <label class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+
+                        <label class="colocar_email">Email<span class="obligatorio">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Escribe tu email" required> 
+
+                        <label class="colocar_telefono">Teléfono</label>        
+                        <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+
+                        <label class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>  
+                        <input type="text" name="asunto" id="asunto" placeholder="Escribe un asunto" required>
+
+                        <label class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                   
+                        <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Deja aquí tu mensaje..." required></textarea>
+                        
+                    <div id="bajo">
+                        <button class="boton2" type="button" name="enviar_formulario" id="Crear" title="Crear">Crear Cliente</button>   
+                        <p class="obligatorio"><small>*los campos son obligatorios.</small></p>
+                    </div>
+                    </div>          
+                </form> 
+            </section>
+            <a href="../pages/clientes.html" class="boton2" id="ver_clientes">Ver Clientes</a>
+        </div>
+    </main>
+    <footer>
+        <div class="iconos">
+            <a href="#" class="facebook">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" class="instagram">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="#" class="whatsapp">
+                <i class='bx bxl-whatsapp' ></i>
+            </a>
+        </div>
+        <p><small>© - Todos los derechos reservados - 2024</small></p>
+    </footer>
+
+    <script src="../js/fetchData.js"></script>
+    <script src="../js/fetch_post.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --azul: #5E3DB9;
+    --gris: #817D7D;
+    --contraste: #BE9899;
+    --negro: #151010; 
+    --blanco: #E8E8F6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comfortaa", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 3fr auto;
+    gap: 20px;
+    background-color: var(--blanco);
+    
+}
+
+/*Propiedades del Header*/
+
+header {
+    background-color: var(--azul);
+    border-radius: 0px 0px 15px 15px;
+    display: grid;
+    grid-template-columns: 0.6fr 3fr;
+    align-items: center;
+    
+}
+
+header img {
+    width: 100px;
+    
+}
+
+header nav a {
+    color: var(--blanco);
+    height: 100px;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    color: var(--blanco);
+    
+}
+
+header nav li:hover{
+    
+    background-color: var(--negro);
+    box-shadow:  10px 10px 0px      #472e8d,
+                -10px -10px 0px #754ce5;
+
+    transition: 0.7s ease-out;
+    font-size: 25px;
+    
+}
+
+header nav a:hover {
+    text-decoration: overline;
+    color: var(--contraste);
+}
+
+/*  Propiedades comunes del main    */
+#cuerpo {
+    margin: 10px;
+    padding: 10px;
+}
+
+#titulo {
+    background-color: #BE9899;
+    border-radius: 1em;
+    border: 1px dashed #5E3DB9;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#titulo p {
+    margin: 20px
+}
+
+#titulo h1 {
+    margin-top: 20px;
+}
+
+.boton1 {
+    background-color: var(--azul);
+    color:var(--blanco);
+    border-radius: 9px;
+    border: 0.5px solid #e4787b7b;
+    /*box-shadow: 3px 3px 3px;*/
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.boton1:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton2 {
+    border-radius: 1em;
+    padding: 5px;
+    color: white;
+    background-color: #5E3DB9;
+    margin: 5px;
+    box-shadow: 0px 3px 3px 0 black;
+}
+
+.boton2:hover{
+    
+    background-color: var(--negro);
+    box-shadow:  5px 5px 0px      #472e8d,
+                -5px -5px 0px #754ce5;
+
+    transition: 0.7s ease-out;
+    font-size: 15px;
+    
+}
+
+/*  Propiedades del Footer  */
+
+footer {
+    background-color: var(--azul);
+    border-radius: 15px 15px 0px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-align: right;   
+}
+
+footer p{
+    color: var(--blanco);
+    margin: 20px 10px 20px 0px;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: left;
+    margin: 2%;
+    margin-left: 10px;
+    gap: 10px;
+    width: max-content;
+}
+
+.iconos a {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    
+}
+
+.facebook {
+    background-color: white;
+    color: #4267B2;
+}
+
+.instagram {
+    --instagram-white: #fff;
+    --instagram-blue: #3051f1;
+    --instagram-purple: #c92bb7;
+    --instagram-red: #f73344;
+    --instagram-orange: #fa8e37;
+    --instagram-yellow: #fcdf8f;
+    --instagram-yellow_to: #fbd377;
+  
+    background: radial-gradient(
+        circle farthest-corner at 28% 120%,
+        var(--instagram-yellow) -16%,
+        var(--instagram-yellow_to) 16%,
+        var(--instagram-orange) 32%,
+        var(--instagram-red) 48%,
+        transparent 64%
+      ),
+      linear-gradient(0deg, var(--instagram-red) 16%, transparent 72%),
+      linear-gradient(
+        145deg,
+        var(--instagram-blue) -48%,
+        var(--instagram-purple) 24%
+      );
+}
+
+.whatsapp {
+    background-color: #2BB741;
+    color: white;
+} 
+
+
+/*  Media Query */
+
+/*Tablet*/
+
+@media (min-width: 576px) and (max-width: 992px) {
+    header nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: underline;
+    }      
+}
+/*Fin Tablet*/
+
+/*Movil*/
+@media (max-width: 575px) {
+    header nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: underline;
+        font-size: 15px;
+    }    
+}
+
+/*Fin Movil*/
