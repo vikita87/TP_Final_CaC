@@ -22,7 +22,9 @@ def create_client():
         email=data['email'],
         telefono=data['telefono'],
         asunto=data['asunto'],
-        mensaje=data['mensaje']
+        mensaje=data['mensaje'],
+        atendido=False,
+        activo=True
     )
     new_client.save()
     return jsonify({'message': 'Client created successfully'}), 201

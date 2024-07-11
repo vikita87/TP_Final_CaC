@@ -58,7 +58,9 @@ def create_table_clientes():
             email VARCHAR(300) NOT NULL,
             telefono VARCHAR(300) NOT NULL,
             asunto VARCHAR(300) NOT NULL,
-            mensaje VARCHAR(300) NOT NULL            
+            mensaje VARCHAR(300) NOT NULL,
+            atendido BOOLEAN NOT NULL,
+            activo BOOLEAN NOT NULL            
         );
         """
     )

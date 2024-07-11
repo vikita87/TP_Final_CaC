@@ -46,6 +46,14 @@
 
                         <label class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                   
                         <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Deja aquí tu mensaje..." required></textarea>
+
+                        <input type="hidden" name="suscribirme" value="false">
+                        <label class="colocar_mensaje"><small>Aceptar politica de privacidad</small><span class="obligatorio">*</span></label>                   
+                        <input type="checkbox" name="politica" class="politica" id="politica" value="true" required>
+
+                        <input type="hidden" name="aceptar" value="false">
+                        <label class="colocar_mensaje"><small>Aceptar términos y condiciones</small><span class="obligatorio">*</span></label>                   
+                        <input type="checkbox" name="terminos" class="terminos" id="terminos" value="true" required>
                         
                     <div id="bajo">
                         <button class="boton2" type="button" name="enviar_formulario" id="Crear" title="Crear">Enviar Consulta</button>   
