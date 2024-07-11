@@ -13,6 +13,8 @@ app.route('/api/clients/all', methods=['GET'])(get_all_client)
 
 app.route('/api/client/create/', methods=['POST'])(create_client)
 
+app.route("/api/client/update/<int:client_id>", methods=["PUT"])(update_client)
+
 init_app(app)
 
 CORS(app)

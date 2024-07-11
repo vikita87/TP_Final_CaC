@@ -12,19 +12,39 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid #5E3DB9;
+    background-color: #E8E8F6;
   }
 
 td {
     padding: 10px;
     text-align: center;
-    
+    border: 1px solid var(--negro);
 }
 
 #botonera {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+button {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px;
+}
+
+
+#Agregar:hover {
+    color: green;
+}
+#Editar:hover {
+    color: blue;
+}
+#Eliminar:hover {
+    color: red;
 }
 
 #cuerpo section {    
@@ -44,7 +64,9 @@ td {
     color: #151010;
 }
 
-
+#titulos {
+    background-color: var(--azul);
+}
 /*  Media Query */
 
 /*Tablet*/

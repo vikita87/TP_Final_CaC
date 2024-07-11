@@ -12,7 +12,7 @@
 <body>
     <header>
         <img src="../img/Logo_DR_PC.png" alt="Logo">
-        <nav>    
+        <!--<nav>    
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
@@ -20,17 +20,17 @@
                 <li><a href="../pages/presupuesto.html">Presupuesto</a></li>
                 <li><a href="../pages/quienes_somos.html">Quienes somos</a></li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
     <main class="principal">
         <div id="titulo">
             <h1>Clientes</h1>
-            <p id="parrafo1">LIstado de Todos Nuestros Clientes</p>
+            <p id="parrafo1">LIstado de Clientes</p>
         </div>        
         
         <div id="cuerpo">
             <section class="clientes">
-                <table>
+                <table id="titulos">
                     <tr>
                         <td>Nombre</td>
                         <td>Email</td>
@@ -57,9 +57,11 @@
                  
             </section>
         </div>
-        <section id="botonera">
-        <a href="../pages/contacto.html" class="boton2">Agregar Cliente</a>
-        </section>
+        <div id="botonera">
+            <button id="Agregar" title="Agregar"><i class='bx bx-message-rounded-add'></i></button>
+            <button id="Editar" title="Editar"><i class='bx bx-message-rounded-dots'></i></button>
+            <button id="Eliminar" title="Eliminar"><i class='bx bx-message-rounded-x'></i></button>
+        </div>
     </main>
     <footer>
         <div class="iconos">
