@@ -65,6 +65,12 @@ class Client:
         db.commit()
         cursor.close()
 
+    def delete(self):
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("UPDATE clientes SET activa = false WHERE id = %s", (self.id_task,))
+        db.commit()
+        cursor.close()
     
     def serialize(self):
         return {

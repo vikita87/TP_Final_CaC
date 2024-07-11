@@ -41,3 +41,11 @@ def update_client(client_id):
     client.save()
     return jsonify({'message': 'Client updated successfully'})
 
+def archived_client(client_id):
+    client = Client.get_by_id(client_id)
+    if not client:
+        return jsonify({'message': 'Client not found'}), 404
+   
+    client.delete()
+    return jsonify({'message': 'Client deleted successfully'})
+

@@ -15,6 +15,8 @@ app.route('/api/client/create/', methods=['POST'])(create_client)
 
 app.route("/api/client/update/<int:client_id>", methods=["PUT"])(update_client)
 
+app.route('/api/client/archived/<int:client_id>', methods=['DELETE'])(archived_client)
+
 init_app(app)
 
 CORS(app)
